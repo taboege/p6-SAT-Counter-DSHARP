@@ -1,0 +1,3 @@
+[submodule "src/dsharp"]
+	path = src/dsharp
+	url = https://github.com/taboege/dsharp

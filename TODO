@@ -1,0 +1,10 @@
+  + Error handling. dsharp and some other solvers print predictable
+    messages in common error scenarios, like invalid DIMACS file.
+
+  + Unify interfaces. SAT::Counter should provide the standard role
+    for #SAT solvers. Error types should be defined there as well.
+
+  + Configurability. Offer command-line options to callers.
+
+  + Maybe export a sub that hides the object creation and maybe
+    a version that automatically awaits the Promise.
