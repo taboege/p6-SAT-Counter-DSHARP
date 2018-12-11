@@ -22,7 +22,7 @@ Given a DIMACS cnf problem, it starts `dsharp`, feeds it the problem and returns
 AUTHOR
 ======
 
-Tobias Boege <tboege@ovgu.de>
+Tobias Boege <tboege ☂ ovgu ☇ de>
 
 COPYRIGHT AND LICENSE
 =====================

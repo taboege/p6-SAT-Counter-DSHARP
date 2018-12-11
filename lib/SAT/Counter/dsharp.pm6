@@ -22,7 +22,7 @@ multi method count (Seq $lines --> Promise) {
 multi method count (Supply $lines --> Promise) {
     my $out;
     with my $proc = Proc::Async.new: :w, %?RESOURCES<dsharp>, '-q' {
-        $out = .stdout;
+        $out = .stdout.lines;
         .start and await .ready;
         react whenever $lines -> $line {
             .put: $line;

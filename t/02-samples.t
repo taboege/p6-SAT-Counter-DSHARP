@@ -11,8 +11,6 @@ use SAT::Counter::dsharp;
 # with an explanation for why the number here is correct:
 #   + cachet/disjunction-100.cnf: report 2**100 instead of 2**100-1,
 #     this must obviously be a bug in cachet.
-#   + 
-#
 
 plan 4;
 
