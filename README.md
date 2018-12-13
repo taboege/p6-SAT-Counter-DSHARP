@@ -1,21 +1,24 @@
 NAME
 ====
 
-SAT::Counter::dsharp - #SAT solver dsharp
+SAT::Counter::DSHARP - #SAT solver DSHARP
 
 SYNOPSIS
 ========
 
 ``` perl6
-use SAT::Counter::dsharp;
+use SAT::Counter::DSHARP;
 
-say await dsharp.new.count($my-cnf-file.IO)
+say dsharp 't/gaussoids-4.cnf', :now;
+#= 679
+say dsharp 't/bmc-ibm-2.cnf', :now;
+#= 13330654897016668160
 ```
 
 DESCRIPTION
 ===========
 
-SAT::Counter::dsharp wraps the `dsharp` executable (bundled with the module) used to count the satisfying assignments of a Boolean formula in the `DIMACS cnf` format, i.e. the `#SAT` problem associated to the formula.
+SAT::Counter::DSHARP wraps the `dsharp` executable (bundled with the module) used to count the satisfying assignments of a Boolean formula in the `DIMACS cnf` format, i.e. the `#SAT` problem associated to the formula.
 
 Given a DIMACS cnf problem, it starts `dsharp`, feeds it the problem and returns a Promise which is kept with the `#SAT` solution found or broken on error.
 

@@ -1,6 +1,6 @@
 use Test;
-use Test::SAT::Counter;
-use SAT::Counter::dsharp;
+use Test::SAT;
+use SAT::Counter::DSHARP;
 
 # All numbers here confirmed[*] with dsharp, sharpSAT and cachet.
 # (I modified cachet-wmc-1-21 for bignum support but the license does not
@@ -14,7 +14,7 @@ use SAT::Counter::dsharp;
 
 plan 4;
 
-my $*SAT-COUNTER = dsharp;
+my $*SAT-COUNTER = DSHARP;
 
 # Some gaussoids
 subtest 'gaussoids' => {

@@ -1,25 +1,24 @@
 {
-  "name"                   : "SAT::Counter::dsharp",
+  "name"                   : "SAT::Counter::DSHARP",
   "version"                : "0.0.1",
   "perl"                   : "6.c",
   "author"                 : "github:taboege",
-  "description"            : "#SAT solver dsharp",
+  "description"            : "#SAT solver DSHARP",
   "tags"                   : [ ],
   "license"                : "Artistic-2.0",
-  "depends"                : [ ],
+  "depends"                : [
+    "SAT"
+  ],
   "build-depends"          : [
     "make:from<bin>",
     "g++:from<bin>",
     "gmp:from<native>"
   ],
-  "test-depends"           : [
-    "Compress::Zlib"
-  ],
   "resources"              : [
     "dsharp"
   ],
   "provides"               : {
-    "SAT::Counter::dsharp" : "lib/SAT/Counter/dsharp.pm6"
+    "SAT::Counter::DSHARP" : "lib/SAT/Counter/DSHARP.pm6"
   },
-  "source-url"             : "git://github.com/taboege/p6-SAT-Counter-dsharp.git"
+  "source-url"             : "git://github.com/taboege/p6-SAT-Counter-DSHARP.git"
 }
