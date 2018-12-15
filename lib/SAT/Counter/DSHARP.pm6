@@ -29,6 +29,9 @@ error.
 
 use SAT;
 
+# XXX: Workaround for zef stripping execute bits on resource install.
+BEGIN sink with %?RESOURCES<dsharp>.IO { .chmod: 0o100 +| .mode };
+
 class SAT::Counter::DSHARP does SAT::Counter is export {
     multi method count (Supply $lines, *% () --> Promise) {
         my $out;
