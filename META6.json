@@ -2,7 +2,7 @@
   "name"                   : "SAT::Counter::DSHARP",
   "version"                : "0.0.1",
   "perl"                   : "6.c",
-  "author"                 : "github:taboege",
+  "authors"                : "Tobias Boege",
   "description"            : "#SAT solver DSHARP",
   "tags"                   : [ ],
   "license"                : "Artistic-2.0",
@@ -13,6 +13,9 @@
     "make:from<bin>",
     "g++:from<bin>",
     "gmp:from<native>"
+  ],
+  "test-depends"           : [
+    "Test::META"
   ],
   "resources"              : [
     "dsharp"
