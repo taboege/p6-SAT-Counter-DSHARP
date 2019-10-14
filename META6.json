@@ -23,5 +23,5 @@
   "provides"               : {
     "SAT::Counter::DSHARP" : "lib/SAT/Counter/DSHARP.pm6"
   },
-  "source-url"             : "git://github.com/taboege/p6-SAT-Counter-DSHARP.git"
+  "source-url"             : "git://github.com/taboege/raku-SAT-Counter-DSHARP.git"
 }
